@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: syllabus
 title: Syllabus
 header: Course Syllabus
 group: navigation
