@@ -1,13 +1,20 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: New Class
+tagline: Learning how to learn
 ---
 {% include JB/setup %}
+
+This is based on Jekyll Bootstrap but customized for use as a class
+web page.
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+
+## jb-class updates
+
+This has been updated to Bootstrap 3.
 
 ## Update Author Attributes
 
@@ -40,7 +47,5 @@ Here's a sample "posts list".
 
 ## To-Do
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
+* Improve syllabus/schedule templates
 
