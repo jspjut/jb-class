@@ -1,0 +1,171 @@
+/* Turn the `.navbar` at the top purple */
+.purple-nav {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #563d7c;
+  border-color: #463265;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+  background-image: none;
+}
+.purple-nav .navbar-collapse {
+  border-color: #463265;
+}
+.purple-nav .navbar-brand {
+  color: #fff;
+}
+.purple-nav .navbar-nav > li > a {
+  color: #cdbfe3;
+}
+.purple-nav .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.purple-nav .navbar-nav > .active > a,
+.purple-nav .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #463265;
+}
+.purple-nav .navbar-toggle {
+  border-color: #563d7c;
+}
+.purple-nav .navbar-toggle:hover {
+  background-color: #463265;
+  border-color: #463265;
+}
+/* purple dropdown menu */
+.purple-nav .dropdown-menu {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #563d7c;
+  border-color: #463265;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+  background-image: none;
+}
+.purple-nav .dropdown-menu > li > a {
+  color: #cdbfe3;
+}
+.purple-nav .dropdown-menu > li > a:hover {
+  color: #fff;
+  background-image: none;
+  background-color: #563d7c;
+}
+.purple-nav .dropdown-menu > .active > a,
+.purple-nav .dropdown-menu > .active > a:hover {
+  color: #fff;
+  background-color: #463265;
+  background-image: none;
+}
+
+/* Background: 005A31 */
+/* Border: 005029 */
+/* Text: F3FAB6 */
+/* Selected: 004029 */
+/* Turn the `.navbar` at the top green */
+.green-nav {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #005A31;
+  border-color: #005029;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+  background-image: none;
+}
+.green-nav .navbar-collapse {
+  border-color: #004029;
+}
+.green-nav .navbar-brand {
+  color: #fff;
+}
+.green-nav .navbar-nav > li > a {
+  color: #F3FAB6;
+}
+.green-nav .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.green-nav .navbar-nav > .active > a,
+.green-nav .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #004029;
+}
+.green-nav .navbar-toggle {
+  border-color: #005029;
+}
+.green-nav .navbar-toggle:hover {
+  background-color: #004029;
+  border-color: #004029;
+}
+/* green dropdown menu */
+.green-nav .dropdown-menu {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #005A31;
+  border-color: #005029;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+  background-image: none;
+}
+.green-nav .dropdown-menu > li > a {
+  color: #F3FAB6;
+}
+.green-nav .dropdown-menu > li > a:hover {
+  color: #fff;
+  background-image: none;
+  background-color: #005029;
+}
+.green-nav .dropdown-menu > .active > a,
+.green-nav .dropdown-menu > .active > a:hover {
+  color: #fff;
+  background-color: #004029;
+  background-image: none;
+}
+
+/* Background: 649D9B */
+/* Border: 558C89 */
+/* Text: ECECEA */
+/* Selected: D9853B */
+/* Turn the `.navbar` at the top teal */
+.teal-nav {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #649D9B;
+  border-color: #558C89;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+  background-image: none;
+}
+.teal-nav .navbar-collapse {
+  border-color: #D9853B;
+}
+.teal-nav .navbar-brand {
+  color: #fff;
+}
+.teal-nav .navbar-nav > li > a {
+  color: #ECECEA;
+}
+.teal-nav .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.teal-nav .navbar-nav > .active > a,
+.teal-nav .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #D9853B;
+}
+.teal-nav .navbar-toggle {
+  border-color: #558C89;
+}
+.teal-nav .navbar-toggle:hover {
+  background-color: #D9853B;
+  border-color: #D9853B;
+}
+.teal-nav .dropdown-menu {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #649D9B;
+  border-color: #558C89;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+  background-image: none;
+}
+.teal-nav .dropdown-menu > li > a {
+  color: #ECECEA;
+}
+.teal-nav .dropdown-menu > li > a:hover {
+  color: #fff;
+  background-image: none;
+  background-color: #558C89;
+}
+.teal-nav .dropdown-menu > .active > a,
+.teal-nav .dropdown-menu > .active > a:hover {
+  color: #fff;
+  background-color: #D9853B;
+  background-image: none;
+}
