@@ -17,6 +17,7 @@
 }
 .purple-nav .navbar-nav > li > a:hover {
   color: #fff;
+  background-color: #563d7c;
 }
 .purple-nav .navbar-nav > .active > a,
 .purple-nav .navbar-nav > .active > a:hover {
@@ -76,6 +77,7 @@
 }
 .green-nav .navbar-nav > li > a:hover {
   color: #fff;
+  background-color: #005029;
 }
 .green-nav .navbar-nav > .active > a,
 .green-nav .navbar-nav > .active > a:hover {
@@ -135,6 +137,7 @@
 }
 .teal-nav .navbar-nav > li > a:hover {
   color: #fff;
+  background-color: #558C89;
 }
 .teal-nav .navbar-nav > .active > a,
 .teal-nav .navbar-nav > .active > a:hover {
@@ -157,6 +160,10 @@
 }
 .teal-nav .dropdown-menu > li > a {
   color: #ECECEA;
+}
+.teal-nav .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ECECEA;
+  border-bottom-color: #ECECEA;
 }
 .teal-nav .dropdown-menu > li > a:hover {
   color: #fff;
