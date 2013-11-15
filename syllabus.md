@@ -14,6 +14,26 @@ In this class we will achieve the following:
 * Second Objective
 * and so on...
 
+## Instructors
+{% for profid in site.profs %}
+{% assign prof = site.instructors[profid] %}
+<h3>{{ prof.name }}</h3>
+<ul class="list-inline">
+  {% if prof.email %}
+    <li>Email: <a href="mailto:{{ prof.email }}">{{ prof.email }}</a></li>
+  {% endif %}
+  {% if prof.room %}
+    <li>Room: {{ prof.room }}</li>
+  {% endif %}
+  {% if prof.hours %}
+    <li>Hours: {{ prof.hours }}</li>
+  {% endif %}
+  {% if prof.web %}
+    <li><a href="{{ prof.web }}">Website</a></li>
+  {% endif %}
+</ul>
+{% endfor %}
+
 ## Grading
 
 Grades will be assigned as follows:

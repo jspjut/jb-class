@@ -5,6 +5,9 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
+# force redcarpet (better block quotes)
+markdown: redcarpet
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -12,10 +15,21 @@ title : E0
 tagline: Site Tagline
 author :
   name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+#  email : blah@email.test
+#  github : username
+#  twitter : username
+#  feedburner : feedname
+
+# Add a record for each instructor here and they will 
+# automatically appear on the syllabus/index
+profs : prof1
+instructors :
+  prof1 :
+    name : Some Guy
+    email : sguy@myu.edu
+    room : 1234
+    hours : MW 8-10
+    web : http://sguy.github.io
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
