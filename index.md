@@ -30,6 +30,24 @@ In `_config.yml` remember to specify your own data:
 
 The theme should reference these variables whenever needed.
 
+In addition, I've added a `profs` and `instructors` field that can be
+used as shown in the next section. The sample instructor info is as
+follows:
+
+```
+profs : prof1
+instructors :
+  prof1 :
+    name : Some Guy
+    email : sguy@myu.edu
+    room : 1234
+    hours : MW 8-10
+    web : http://sguy.github.io
+```
+
+The `profs` field should be a comma separated list of the instructors
+if there are more than one for the course.
+
 ## Sample Instructor Information
 {% for profid in site.profs %}
 {% assign prof = site.instructors[profid] %}
@@ -64,6 +82,23 @@ Here's a sample "posts list".
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+If you want to remove the blog features and pages from the navbar,
+it's as simple as deleting the following lines from
+`_includes/themes/twitter/default.html`:
+
+```
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        {{ "{% assign pages_list = site.pages " }}%}
+        {{ "{% assign group = 'misc' " }}%}
+        {{ "{% include JB/pages_list " }}%}
+      </ul>
+    </li>
+  </ul>
+```
 
 ## To-Do
 
