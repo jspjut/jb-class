@@ -82,6 +82,21 @@ Search for the following line:
 and replace `teal-nav` with another color in the `custom-nav.css`
 file. If you want to use the bootstrap 3 default color for instance,
 you can switch it to say `purple-nav`.
+
+## Deploy to custom web space
+In `_config.yml` you should set `BASE_PATH` to the path to the root
+directory where you intend to deploy your site.
+For example, the setting might be:
+
+```
+  BASE_PATH : /~sguy/jb-class
+```
+
+When you want to build to deploy, run `jekyll build --safe` and then
+copy the contents of the `_site` directory to the web server at the
+location shown by `BASE_PATH`.
+If you want to test locally, you can run `jekyll serve -w` like
+normal, and the BASE_PATH will function as if it were set to `/`.
     
 ## Sample Posts
 
