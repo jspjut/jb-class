@@ -25,6 +25,7 @@ author :
 
 # Add a record for each instructor here and they will 
 # automatically appear on the syllabus/index
+# Multiple profs like profs : [prof1, prof2]
 profs : prof1
 instructors :
   prof1 :
