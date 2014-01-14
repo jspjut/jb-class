@@ -67,6 +67,21 @@ if there are more than one for the course.
   {% endif %}
 </ul>
 {% endfor %}
+
+## Custom Navbars
+
+I've included a few custom navbar color styles in
+`assets/themes/twitter/css/custom-nav.css`
+that you can select in `_includes/themes/twitter/default.html`.
+Search for the following line:
+
+```html
+    <header class="navbar navbar-inverse teal-nav" role="banner">
+```
+
+and replace `teal-nav` with another color in the `custom-nav.css`
+file. If you want to use the bootstrap 3 default color for instance,
+you can switch it to say `purple-nav`.
     
 ## Sample Posts
 
