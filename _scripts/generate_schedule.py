@@ -3,7 +3,9 @@
 import sys
 import datetime
 
-print 'usage: %s <start year> <start month> <start day> <number of weeks> <schedule-MW, MWF, etc.>'
+# This should be run with a Sunday as the start date.
+
+sys.stderr.write('usage: %s <start year> <start month> <start day> <number of weeks> <schedule-MW, MWF, etc.>\n'%sys.argv[0])
 
 try:
     start_date = datetime.date(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
@@ -68,14 +70,18 @@ print '  </tr>'
 d = start_date
 one_day = datetime.timedelta(days=1)
 week_count = 1
-while d <= start_date + weeks * one_day * 7:
-    if d.isoweekday() == 1:
-        print '  <tr><td>%d</td>'%week_count
+while d <= start_date + (weeks * one_day * 7) - one_day:
     if d.isoweekday() == 7:
+        print '  <tr><td>%d</td>'%week_count
+    if d.isoweekday() == 6:
         print '  </tr>'
         week_count += 1
 
-    if d.isoweekday() == 2 and 'M' in schedule:
+    if (d.isoweekday() == 1 and 'M' in schedule) or \
+       (d.isoweekday() == 2 and 'T' in schedule) or \
+       (d.isoweekday() == 3 and 'W' in schedule) or \
+       (d.isoweekday() == 4 and 'H' in schedule) or \
+       (d.isoweekday() == 5 and 'F' in schedule):
         print '''    <td>
       <strong>%s</strong><br />
       Topic
