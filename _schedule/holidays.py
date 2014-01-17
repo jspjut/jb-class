@@ -19,4 +19,6 @@ events = { \
            datetime.date(2014,5,5) : 'Presentation Day', \
            datetime.date(2014,5,6) : 'Presentation Day', \
            datetime.date(2014,5,7) : 'Presentation Day', \
+           datetime.date(2014,5,8) : 'Finals', \
+           datetime.date(2014,5,9) : 'Finals', \
 }
