@@ -28,6 +28,15 @@ if schedule not in ['MW', 'TH', 'MWF']:
     sys.stderr.write('Bad weekly schedule.\n')
     sys.exit(-1)
 
+# bring in information from _schedule sources
+sys.path.append('.')
+import _schedule
+from _schedule import holidays
+from _schedule import topics
+topics = topics.topics
+events = holidays.events
+holidays = holidays.holidays
+
 print '''---
 layout: page
 title: Schedule
@@ -70,6 +79,7 @@ print '  </tr>'
 d = start_date
 one_day = datetime.timedelta(days=1)
 week_count = 1
+day_count = 0
 while d <= start_date + (weeks * one_day * 7) - one_day:
     if d.isoweekday() == 7:
         print '  <tr><td>%d</td>'%week_count
@@ -83,9 +93,23 @@ while d <= start_date + (weeks * one_day * 7) - one_day:
        (d.isoweekday() == 4 and 'H' in schedule) or \
        (d.isoweekday() == 5 and 'F' in schedule):
         print '''    <td>
-      <strong>%s</strong><br />
-      Topic
-    </td>'''%(d.strftime("%b %d"))
+      <strong>%s</strong><br />'''%(d.strftime("%b %d"))
+        # Events print first
+        try:
+            print '<strong>%s</strong><br />'%events[d]
+        except:
+            pass
+        # Holidays print second
+        try:
+            print '<strong>%s</strong><br />'%holidays[d]
+        except:
+            # Print next topic if not a holiday
+            if day_count < len(topics):
+                print topics[day_count]
+            else:
+                print 'Topic'
+            day_count += 1
+        print '''</td>'''
     d += one_day
 
 print '</table>'
