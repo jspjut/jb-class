@@ -43,6 +43,6 @@ Grades will be assigned as follows:
 
 ## Schedule
 
-See the [schedule page]({{site.url}}/schedule.html).
+See the [schedule page]({{BASE_PATH}}/schedule.html).
 
 
